@@ -14,6 +14,12 @@ app.use(express.json({extended:true}))
 app.use('/api/auth', require('./routes/auth.routes'))
 
 
+// Для хироку
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname,"client/build/index.html"))
+  })
+
+
 
 const PORT = config.get('port')||5000;
 
