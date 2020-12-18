@@ -1,0 +1,35 @@
+{
+  "name": "frandomizer",
+  "version": "1.0.0",
+  "description": "Lets make some funny random numbers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server \" \"npm run client \" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itabakman/frandomizer.git"
+  },
+  "author": "iTabakman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itabakman/frandomizer/issues"
+  },
+  "homepage": "https://github.com/itabakman/frandomizer#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.7"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
