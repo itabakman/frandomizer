@@ -1,88 +1,132 @@
-.logoName{
-font-size: 48px;
-padding-left: 50px;
+.logoName {
+  font-size: 48px;
+  padding-left: 50px;
 }
-.nav-wrapper{
+
+.nav-wrapper {
   padding-right: 50px;
 }
-.tabColor{
+
+.tabColor {
   background-color: #8FC0A9;
 }
+
 .btn {
   margin: 10px;
 }
-label{
-  color:black !important;
+
+label {
+  color: black !important;
 }
-label:active{
-  color:black !important;
+
+label:active {
+  color: black !important;
 }
-.inputTab{
+
+.inputTab {
   padding-left: 30px !important;
   padding-right: 30px !important;
   padding-bottom: 30px !important;
 }
-.radio{
+
+.radio {
   background: black;
 }
-.random{
+
+.random {
   display: flex;
   justify-content: center;
   margin-left: 200px;
   margin-right: 200px;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-align: center ;
+  text-align: center;
   background: rgba(143, 192, 169, 0.2) !important;
   border-radius: 20px !important;
   font-size: 48px;
 }
-.randomBtn{
-margin: 20px;
-padding: 15px 20px 15px 20px;  
-font-size: 48px !important ;
-background: #C8D5B9 ;
-box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.25) !important ;
-border-radius: 20px !important;
-border:none;
+
+.randomBtn {
+  margin: 20px;
+  padding: 15px 20px 15px 20px;
+  font-size: 48px !important;
+  background: #C8D5B9;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.25) !important;
+  border-radius: 20px !important;
+  border: none;
 }
-button:focus{
-  background:rgba(143, 192, 169, 0.2)!important;
+
+button:focus {
+  background: #C8D5B9 !important;
 }
-button:active{
+
+button:active {
   box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.25) !important;
 }
-.otdo{
+
+.otdo {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 1rem;
 }
-.input{
+
+.input {
   width: 80px !important;
   margin: 0;
   border-bottom: none;
-  background:rgba(143, 192, 169, 0.2) !important;
+  background: rgba(143, 192, 169, 0.2) !important;
   border-radius: 20px !important;
-  padding-left: 50px!important;
+  padding-left: 50px !important;
+
 }
-.title{font-size: 64px;}
-.luckyTitle{font-size: 56px;}
-nav{background-color:#8FC0A9 !important}
-.card{ box-shadow:none !important;}
-.secretTitle{
+
+input[type="number"] {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  -ms-appearance: none !important;
+  appearance: none !important;
+
+}
+
+.title {
+  font-size: 64px;
+}
+
+.luckyTitle {
+  font-size: 56px;
+}
+.diaptitle{
+  font-size: 36px;
+}
+.diap2title{
   font-size: 24px;
 }
-.btnCont{
+
+nav {
+  background-color: #8FC0A9 !important
+}
+
+.card {
+  box-shadow: none !important;
+}
+
+.secretTitle {
+  font-size: 24px;
+}
+
+.btnCont {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.randomBtn2{
+
+.randomBtn2 {
   margin: 20px;
-  padding: 10px 20px 10px 20px;  
-  font-size: 16px !important ;
-  background: #C8D5B9 ;
-  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.25) !important ;
+  padding: 10px 20px 10px 20px;
+  font-size: 16px !important;
+  background: #C8D5B9;
+  box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.25) !important;
   border-radius: 20px !important;
-  border:none;
-  }
+  border: none;
+}
