@@ -4,7 +4,8 @@ import './../App.css'
 
 
 export const RandomPage = () => {
-    const [random, setRandom] = useState(0)
+    const init=0;
+    const [random, setRandom] = useState(init)
     const [min, setMin] = useState(0)
     const [max, setMax] = useState(1000)
 
@@ -18,10 +19,11 @@ export const RandomPage = () => {
     if ('min'=== event.target.name){
        
         setMin(event.target.value)
-        
+     
     }
     else if ( 'max'===event.target.name){
         setMax(event.target.value)
+      
     }
 }
     const Randomize=(min,max)=>{
@@ -29,20 +31,23 @@ export const RandomPage = () => {
         return num
     }
 const pressedBtn =()=>{
-    setRandom()
-    if (number && truth==='true' && number != random){
+    setRandom('')
+    if (number && truth==='true' && number !== random && number>min && number<max){
         setRandom(number)
         localStorage.removeItem('secretNumber')
  
      }
      else {
         
-         setRandom( Randomize(min,max))
+         setRandom(Randomize(min,max))
+         
          
        
      }
 }
-
+const select =(event)=>{
+ event.target.select()
+}
 
 
     return (
@@ -60,8 +65,8 @@ const pressedBtn =()=>{
            <div className="btnHover " ><button className='randomBtn' onClick={pressedBtn} >Крутить</button></div>
            <div>Диапазон</div>
            <div className='otdo'>
-               <div>От <input className="input" type="number"  onChange={changeHandler} defaultValue={min} name="min"/> </div>
-               <div >До <input className="input" type="number" onChange={changeHandler} defaultValue={max} name="max"/> </div>
+               <div>От <input className="input" type="number"  onChange={changeHandler} onClick={select}  defaultValue={min} name="min"/> </div>
+               <div >До <input className="input" type="number" onChange={changeHandler} onClick={select} defaultValue={max} name="max"/> </div>
            </div>
 
 
