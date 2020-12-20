@@ -2,12 +2,12 @@ const express = require('express');
 const config = require('config');
 const path = require('path');
 const mongoose = require('mongoose');
-const User = require('./models/user')
+
 
 
 
 const app = express();
-
+app.use(express.static(path.join(__dirname,'client/build')))
 app.use(express.json({extended:true}))
 
 //Login route
