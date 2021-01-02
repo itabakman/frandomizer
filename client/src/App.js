@@ -12,7 +12,8 @@ import { Navbar } from './components/navbar';
 function App() {
   const {token,login,logout,userId,secretNumber}=useAuth()
 
-  const isAuthenticaded = !!token //to bool
+  const isAuthenticaded = true//to bool !!token
+
   
   const routes = useRoutes(isAuthenticaded)
   
